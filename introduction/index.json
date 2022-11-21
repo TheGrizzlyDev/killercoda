@@ -1,0 +1,12 @@
+{
+  "title": "Bazel introduction",
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "steps": [
+    {
+      "title": "What is Bazel?",
+      "text": "what-is-bazel.md"
+    }
+  ]
+}
