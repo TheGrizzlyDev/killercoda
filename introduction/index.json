@@ -15,6 +15,11 @@
       {
         "title": "Install bazel",
         "text": "install-bazel/install-bazel.md"
+      },
+      {
+        "title": "Install bazelisk",
+        "text": "install-bazel/install-bazelisk.md",
+        "verify": "install-bazel/install-bazelisk.verify.sh"
       }
     ]
   }
