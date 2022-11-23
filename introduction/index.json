@@ -3,10 +3,15 @@
   "backend": {
     "imageid": "ubuntu"
   },
-  "steps": [
-    {
-      "title": "What is Bazel?",
+  "details": {
+    "intro": {
       "text": "what-is-bazel.md"
-    }
-  ]
+    },
+    "steps": [
+      {
+        "title": "Why Bazel?",
+        "text": "why-bazel.md"
+      }
+    ]
+  }
 }
