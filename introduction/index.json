@@ -20,6 +20,11 @@
         "title": "Install bazelisk",
         "text": "install-bazel/install-bazelisk.md",
         "verify": "install-bazel/install-bazelisk.verify.sh"
+      },
+      {
+        "title": "Project 'Hello world!'",
+        "text": "hello-world/setup-project.md",
+        "verify": "hello-world/setup-project.verify.sh"
       }
     ]
   }
