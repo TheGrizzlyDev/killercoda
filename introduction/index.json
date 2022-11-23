@@ -25,6 +25,16 @@
         "title": "Project 'Hello world!'",
         "text": "hello-world/setup-project.md",
         "verify": "hello-world/setup-project.verify.sh"
+      },
+      {
+        "title": "Create a simple bash script",
+        "text": "hello-world/hello-world-bash.md",
+        "verify": "hello-world/hello-world-bash.verify.sh"
+      },
+      {
+        "title": "Create your first build target",
+        "text": "hello-world/hello-world-bazel.md",
+        "verify": "hello-world/hello-world-bazel.verify.sh"
       }
     ]
   }
