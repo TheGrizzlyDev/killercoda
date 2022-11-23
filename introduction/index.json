@@ -11,6 +11,10 @@
       {
         "title": "Why Bazel?",
         "text": "why-bazel.md"
+      },
+      {
+        "title": "Install bazel",
+        "text": "install-bazel/install-bazel.md"
       }
     ]
   }
