@@ -45,12 +45,12 @@
         "text": "foundamentals/repositories.md"
       },
       {
-        "title": "Foundamentals: Packages",
-        "text": "foundamentals/packages.md"
-      },
-      {
         "title": "Foundamentals: Targets",
         "text": "foundamentals/targets.md"
+      },
+      {
+        "title": "Foundamentals: Packages",
+        "text": "foundamentals/packages.md"
       },
       {
         "title": "Foundamentals: Labels",
