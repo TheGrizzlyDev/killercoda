@@ -35,6 +35,34 @@
         "title": "Create your first build target",
         "text": "hello-world/hello-world-bazel.md",
         "verify": "hello-world/hello-world-bazel.verify.sh"
+      },
+      {
+        "title": "Foundamentals: Workspaces",
+        "text": "foundamentals/workspaces.md"
+      },
+      {
+        "title": "Foundamentals: Repositories",
+        "text": "foundamentals/repositories.md"
+      },
+      {
+        "title": "Foundamentals: Packages",
+        "text": "foundamentals/packages.md"
+      },
+      {
+        "title": "Foundamentals: Targets",
+        "text": "foundamentals/targets.md"
+      },
+      {
+        "title": "Foundamentals: Labels",
+        "text": "foundamentals/labels.md"
+      },
+      {
+        "title": "Foundamentals: Rules",
+        "text": "foundamentals/rules.md"
+      },
+      {
+        "title": "Foundamentals: Macros",
+        "text": "foundamentals/macros.md"
       }
     ]
   }
