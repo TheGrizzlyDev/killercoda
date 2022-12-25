@@ -1,9 +1,21 @@
-load("@rules_pkg//pkg:mappings.bzl", "pkg_filegroup", "pkg_files", "pkg_mklink")
+load("@rules_pkg//pkg:mappings.bzl", "pkg_filegroup", "pkg_files", "pkg_filegroup")
 
-pkg_mklink(
+pkg_files(
     name = "bazelisk",
-    link_name = "assets/bazelisk",
-    target = "bins/bazelisk",
+    srcs = [
+        "@bazelisk_linux_amd64//file",
+    ],
+    renames = {
+        "@bazelisk_linux_amd64//file": "bazelisk",
+    },
+)
+
+pkg_filegroup(
+    name = "assets",
+    srcs = [
+        ":bazelisk",
+    ],
+    prefix = "assets",
 )
 
 pkg_files(
