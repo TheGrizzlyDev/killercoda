@@ -1,0 +1,23 @@
+{
+    "title": "Bazel for Java",
+    "backend": {
+      "imageid": "ubuntu"
+    },
+    "details": {
+      "intro": {
+        "text": "placeholder.md"
+      },
+      "steps": [
+        {
+          "title": "Placeholder",
+          "text": "placeholder.md"
+        }
+      ],
+      "assets": {
+        "host01": [
+          {"file": "bazelisk", "target": "/usr/bin/bazelisk", "chmod": "+rx"}
+        ]
+      }
+    }
+  }
+  

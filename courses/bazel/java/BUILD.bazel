@@ -1,0 +1,25 @@
+load("@rules_pkg//pkg:mappings.bzl", "pkg_filegroup", "pkg_files", "pkg_mklink")
+
+pkg_mklink(
+    name = "bazelisk",
+    link_name = "assets/bazelisk",
+    target = "bins/bazelisk",
+)
+
+pkg_files(
+    name = "srcs",
+    srcs = [
+        "index.json",
+        "placeholder.md",
+    ],
+)
+
+pkg_filegroup(
+    name = "java",
+    srcs = [
+        ":srcs",
+        ":bazelisk",
+    ],
+    prefix = "java",
+    visibility = ["//visibility:public"],
+)

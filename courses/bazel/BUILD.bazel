@@ -13,6 +13,7 @@ pkg_filegroup(
     srcs = [
         ":srcs",
         "//courses/bazel/introduction",
+        "//courses/bazel/java",
     ],
     visibility = ["//visibility:public"],
 )

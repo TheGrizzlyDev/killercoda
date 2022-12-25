@@ -8,7 +8,7 @@ pkg_files(
     ],
     renames = {
         "@bazelisk_linux_amd64//file": "bazelisk",
-    }
+    },
 )
 
 pkg_filegroup(
