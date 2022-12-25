@@ -1,0 +1,22 @@
+load("@rules_pkg//pkg:mappings.bzl", "pkg_filegroup", "pkg_files")
+
+pkg_files(
+    name = "introduction_srcs",
+    srcs = [
+        "index.json",
+        "what-is-bazel.md",
+        "why-bazel.md",
+    ],
+    prefix = "introduction",
+)
+
+pkg_filegroup(
+    name = "introduction",
+    srcs = [
+        ":introduction_srcs",
+        "//introduction/foundamentals",
+        "//introduction/hello-world",
+        "//introduction/install-bazel",
+    ],
+    visibility = ["//visibility:public"],
+)

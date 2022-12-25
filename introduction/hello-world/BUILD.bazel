@@ -1,0 +1,8 @@
+load("@rules_pkg//pkg:mappings.bzl", "pkg_files")
+
+pkg_files(
+    name = "hello-world",
+    srcs = glob(["*.md", "*.sh"]),
+    prefix = "introduction/hello-world",
+    visibility = ["//introduction:__pkg__"],
+)

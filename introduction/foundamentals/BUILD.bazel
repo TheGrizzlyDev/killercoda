@@ -1,0 +1,8 @@
+load("@rules_pkg//pkg:mappings.bzl", "pkg_files")
+
+pkg_files(
+    name = "foundamentals",
+    srcs = glob(["*.md"]),
+    prefix = "introduction/foundamentals",
+    visibility = ["//introduction:__pkg__"],
+)
