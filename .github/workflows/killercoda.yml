@@ -22,10 +22,7 @@ concurrency:
 
 jobs:
   # Single deploy job since we're just deploying
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -49,18 +46,34 @@ jobs:
           name: tutorial-tar
           path: /tmp/tutorial.tar
           if-no-files-found: error
+  deploy:
+    needs:
+      - build
+    runs-on: ubuntu-latest
+    steps:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
-          repository: git@github.com:TheGrizzlyDev/bazel-for-bears.git
           ref: killercode-release
+          ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
+          persist-credentials: true
           clean: true
-      - run: rm -rf *
-      - run: tar -xf /tmp/tutorial.tar
+      - run: git rm -rf .
+      - uses: actions/download-artifact@v3
+        with:
+          name: tutorial-tar
+      - run: tar -xf tutorial.tar
+      - run: rm tutorial.tar
       - name: Setup git
         run: |
-          git config --global user.email "release-bot@why-should-a-bot-have-an-email.com"
-          git config --global user.name "release-bot"
-      - run: git commit -am "Release from ${{ github.head_ref }}.${{ github.sha }}"
-      - run: git push
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+      - run: git status
+      - run: ls -lR
+      - run: git add .
+      - run: git commit -m "Release from ${{ github.sha }}"
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          ssh: true
+          branch: killercode-release
