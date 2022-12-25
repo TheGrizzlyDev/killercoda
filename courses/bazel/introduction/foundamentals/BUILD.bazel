@@ -4,5 +4,5 @@ pkg_files(
     name = "foundamentals",
     srcs = glob(["*.md"]),
     prefix = "foundamentals",
-    visibility = ["//tutorials/bazel/introduction:__pkg__"],
+    visibility = ["//courses/bazel/introduction:__pkg__"],
 )

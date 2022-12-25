@@ -4,5 +4,5 @@ pkg_files(
     name = "install-bazel",
     srcs = glob(["*.md", "*.sh"]),
     prefix = "install-bazel",
-    visibility = ["//tutorials/bazel/introduction:__pkg__"],
+    visibility = ["//courses/bazel/introduction:__pkg__"],
 )

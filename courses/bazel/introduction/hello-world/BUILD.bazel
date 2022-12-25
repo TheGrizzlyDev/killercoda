@@ -4,5 +4,5 @@ pkg_files(
     name = "hello-world",
     srcs = glob(["*.md", "*.sh"]),
     prefix = "hello-world",
-    visibility = ["//tutorials/bazel/introduction:__pkg__"],
+    visibility = ["//courses/bazel/introduction:__pkg__"],
 )

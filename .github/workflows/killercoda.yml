@@ -37,14 +37,14 @@ jobs:
           path: "~/.cache/bazel"
           key: bazel
       - run: bazel build //...
-      - run: tar -tvf bazel-bin/tutorial.tar
-      - run: cp bazel-bin/tutorial.tar /tmp/tutorial.tar
-      - name: Upload tutorial.tar archive
+      - run: tar -tvf bazel-bin/courses/courses.tar
+      - run: cp bazel-bin/courses/courses.tar /tmp/courses.tar
+      - name: Upload courses.tar archive
         uses: actions/upload-artifact@v2
         with:
           retention-days: 1
           name: tutorial-tar
-          path: /tmp/tutorial.tar
+          path: /tmp/courses.tar
           if-no-files-found: error
   deploy:
     needs:
@@ -62,8 +62,8 @@ jobs:
       - uses: actions/download-artifact@v3
         with:
           name: tutorial-tar
-      - run: tar -xf tutorial.tar
-      - run: rm tutorial.tar
+      - run: tar -xf courses.tar
+      - run: rm courses.tar
       - name: Setup git
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
@@ -71,6 +71,7 @@ jobs:
       - run: git status
       - run: ls -lR
       - run: git add .
+      - run: git status
       - run: git commit -m "Release from ${{ github.sha }}"
       - name: Push changes
         uses: ad-m/github-push-action@master

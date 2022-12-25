@@ -13,9 +13,9 @@ pkg_filegroup(
     name = "introduction",
     srcs = [
         ":introduction_srcs",
-        "//tutorials/bazel/introduction/foundamentals",
-        "//tutorials/bazel/introduction/hello-world",
-        "//tutorials/bazel/introduction/install-bazel",
+        "//courses/bazel/introduction/foundamentals",
+        "//courses/bazel/introduction/hello-world",
+        "//courses/bazel/introduction/install-bazel",
     ],
     prefix = "introduction",
     visibility = ["//visibility:public"],

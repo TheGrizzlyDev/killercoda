@@ -12,7 +12,7 @@ pkg_filegroup(
     prefix = "bazel",
     srcs = [
         ":srcs",
-        "//tutorials/bazel/introduction",
+        "//courses/bazel/introduction",
     ],
     visibility = ["//visibility:public"],
 )

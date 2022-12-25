@@ -1,0 +1,10 @@
+load("@rules_pkg//pkg:tar.bzl", "pkg_tar")
+
+pkg_tar(
+    name = "courses",
+    srcs = [
+        "structure.json",
+        "//courses/bazel",
+    ],
+    visibility = ["//visibility:public"],
+)
