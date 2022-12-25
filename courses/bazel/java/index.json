@@ -15,7 +15,7 @@
       ],
       "assets": {
         "host01": [
-          {"file": "bazelisk", "target": "/usr/bin/", "chmod": "+rx"}
+          {"file": "bazel", "target": "/usr/bin/", "chmod": "+rx"}
         ]
       }
     }
