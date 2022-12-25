@@ -4,6 +4,6 @@ pkg_tar(
     name = "tutorial",
     srcs = [
         "structure.json",
-        "//tutorials",
+        "//tutorials/bazel",
     ]
 )

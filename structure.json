@@ -1,6 +1,6 @@
 
 {
     "items": [
-      { "path": "tutorials", "title": "Bazel tutorials" }
+      { "path": "bazel", "title": "Bazel tutorials" }
     ]
   }

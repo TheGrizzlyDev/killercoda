@@ -3,6 +3,6 @@ load("@rules_pkg//pkg:mappings.bzl", "pkg_files")
 pkg_files(
     name = "hello-world",
     srcs = glob(["*.md", "*.sh"]),
-    prefix = "tutorials/introduction/hello-world",
-    visibility = ["//tutorials/introduction:__pkg__"],
+    prefix = "hello-world",
+    visibility = ["//tutorials/bazel/introduction:__pkg__"],
 )

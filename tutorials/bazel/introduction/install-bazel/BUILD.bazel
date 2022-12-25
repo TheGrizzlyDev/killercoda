@@ -3,6 +3,6 @@ load("@rules_pkg//pkg:mappings.bzl", "pkg_files")
 pkg_files(
     name = "install-bazel",
     srcs = glob(["*.md", "*.sh"]),
-    prefix = "tutorials/introduction/install-bazel",
-    visibility = ["//tutorials/introduction:__pkg__"],
+    prefix = "install-bazel",
+    visibility = ["//tutorials/bazel/introduction:__pkg__"],
 )

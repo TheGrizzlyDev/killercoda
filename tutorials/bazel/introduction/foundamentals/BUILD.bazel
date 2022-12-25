@@ -3,6 +3,6 @@ load("@rules_pkg//pkg:mappings.bzl", "pkg_files")
 pkg_files(
     name = "foundamentals",
     srcs = glob(["*.md"]),
-    prefix = "tutorials/introduction/foundamentals",
-    visibility = ["//tutorials/introduction:__pkg__"],
+    prefix = "foundamentals",
+    visibility = ["//tutorials/bazel/introduction:__pkg__"],
 )
