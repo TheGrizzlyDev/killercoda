@@ -6,7 +6,7 @@ pkg_files(
         "@bazelisk_linux_amd64//file",
     ],
     renames = {
-        "@bazelisk_linux_amd64//file": "bazelisk",
+        "@bazelisk_linux_amd64//file": "bazel",
     },
 )
 
