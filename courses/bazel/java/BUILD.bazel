@@ -1,4 +1,4 @@
-load("@rules_pkg//pkg:mappings.bzl", "pkg_filegroup", "pkg_files", "pkg_filegroup")
+load("@rules_pkg//pkg:mappings.bzl", "pkg_files", "pkg_filegroup")
 
 pkg_files(
     name = "bazelisk",
@@ -30,7 +30,7 @@ pkg_filegroup(
     name = "java",
     srcs = [
         ":srcs",
-        ":bazelisk",
+        ":assets",
     ],
     prefix = "java",
     visibility = ["//visibility:public"],
