@@ -7,16 +7,16 @@ pkg_files(
         "what-is-bazel.md",
         "why-bazel.md",
     ],
-    prefix = "introduction",
+    prefix = "tutorials/introduction",
 )
 
 pkg_filegroup(
     name = "introduction",
     srcs = [
         ":introduction_srcs",
-        "//introduction/foundamentals",
-        "//introduction/hello-world",
-        "//introduction/install-bazel",
+        "//tutorials/introduction/foundamentals",
+        "//tutorials/introduction/hello-world",
+        "//tutorials/introduction/install-bazel",
     ],
     visibility = ["//visibility:public"],
 )

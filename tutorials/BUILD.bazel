@@ -1,0 +1,18 @@
+load("@rules_pkg//pkg:mappings.bzl", "pkg_filegroup", "pkg_files")
+
+pkg_files(
+    name = "tutorials_srcs",
+    srcs = [
+        "structure.json",
+    ],
+    prefix = "tutorials",
+)
+
+pkg_filegroup(
+    name = "tutorials",
+    srcs = [
+        ":tutorials_srcs",
+        "//tutorials/introduction",
+    ],
+    visibility = ["//visibility:public"],
+)
