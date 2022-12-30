@@ -9,7 +9,8 @@
 			"extensions": [
 				"BazelBuild.vscode-bazel",
 				"bbenoist.Nix",
-				"brettm12345.nixfmt-vscode"
+				"brettm12345.nixfmt-vscode",
+				"arrterian.nix-env-selector"
 			]
 		}
 	},

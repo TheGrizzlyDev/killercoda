@@ -1,4 +1,4 @@
 alias(
     name = "courses",
-    actual = "//courses"
+    actual = "//courses",
 )
