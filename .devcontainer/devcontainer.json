@@ -1,12 +1,5 @@
 {
-	"name": "Bazel (Community)",
-	"build": {
-		"dockerfile": "Dockerfile",
-		"args": {
-			"BAZELISK_VERSION": "v1.10.1",
-			"BAZELISK_DOWNLOAD_SHA": "4cb534c52cdd47a6223d4596d530e7c9c785438ab3b0a49ff347e991c210b2cd"
-		}
-	},
+	"image": "ghcr.io/zombiezen/codespaces-nix",
 
 	// Configure tool-specific properties.
 	"customizations": {
@@ -15,7 +8,8 @@
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
 				"BazelBuild.vscode-bazel",
-				"ms-azuretools.vscode-docker"
+				"bbenoist.Nix",
+				"brettm12345.nixfmt-vscode"
 			]
 		}
 	},
