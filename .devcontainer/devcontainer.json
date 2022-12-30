@@ -10,7 +10,8 @@
 				"BazelBuild.vscode-bazel",
 				"bbenoist.Nix",
 				"brettm12345.nixfmt-vscode",
-				"arrterian.nix-env-selector"
+				"arrterian.nix-env-selector",
+				"vscjava.vscode-java-pack"
 			]
 		}
 	},
