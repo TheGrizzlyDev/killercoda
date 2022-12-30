@@ -1,8 +1,0 @@
-load("@rules_pkg//pkg:mappings.bzl", "pkg_files")
-
-pkg_files(
-    name = "hello-world",
-    srcs = glob(["*.md", "*.sh"]),
-    prefix = "hello-world",
-    visibility = ["//courses/bazel/introduction:__pkg__"],
-)

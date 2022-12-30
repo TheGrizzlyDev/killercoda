@@ -1,3 +1,0 @@
-There are multiple ways to install Bazel, but one tremples the other and has seen recently wide adoption [Bazelisk](https://bazel.build/install/bazelisk). Bazelisk is a simple version manager written in go that allows you to have multiple versions of Bazel installed at the same and use the correct one for each codebase. This also makes version upgrades much easier.
-
-During this course we'll almost exclusively use bazelisk, but if you are interested in other installation methods head over to https://bazel.build/install .

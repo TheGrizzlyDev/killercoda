@@ -1,7 +1,0 @@
-
-{
-    "items": [
-      { "path": "introduction", "title": "Introduction to Bazel" },
-      { "path": "java", "title": "Bazel for Java" }
-    ]
-  }

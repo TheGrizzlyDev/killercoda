@@ -1,0 +1,3 @@
+Let's get started with your first Bazel build: Project "Hello World!". The first thing we'll need is going to be a directory that will be the root of the project. You can create one by running `mkdir -p /root/hello-world`{{exec}} and then `cd /root/hello-world`{{exec}}. You will then need to create 2 empty files `touch WORKSPACE BUILD`{{exec}} which are essential to any bazel build. Matter of fact, this is already a valid bazel workspace, so you can now run bazel on it and expect it to work.
+
+Having said that, it is a good idea to also create a third file `echo 5.3.2 > .bazelversion`{{exec}} that will be automatically used by bazelisk to detect exactly what version of Bazel this codebase is using.

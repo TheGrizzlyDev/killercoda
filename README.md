@@ -1,1 +1,0 @@
-# bazel-for-bears
