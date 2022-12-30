@@ -17,7 +17,7 @@ permissions:
 
 # Allow one concurrent deployment
 concurrency:
-  group: "killercode"
+  group: "killercoda"
   cancel-in-progress: true
 
 jobs:
@@ -54,7 +54,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          ref: killercode-release
+          ref: killercoda-release
           ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
           persist-credentials: true
           clean: true
@@ -77,4 +77,5 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           ssh: true
-          branch: killercode-release
+          branch: killercoda-release
+          force: true
